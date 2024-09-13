@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkgray;
+    background-color: whitesmoke;
     color: whitemoke;
     text-align: center;
     display: flex;
@@ -104,20 +104,6 @@ body {
     border-left: 0;
     border-top: 0;
     padding-bottom: 4px;
-}
-
-#main {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: whitesmoke;
-    flex-wrap: wrap;
-    height: 900px;
-    margin-top: 90px;
 }
 
 #btns {
