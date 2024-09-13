@@ -77,7 +77,7 @@ function createMenu() {
 }
 
 function detectDevice() {
-    const userAgent = navigator.userAgent || navigator.vendor || navigator.opera;
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
         body.style.display = "block";
