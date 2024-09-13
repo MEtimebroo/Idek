@@ -74,3 +74,23 @@ function createMenu() {
         menu.style.display = "none";
     });
 }
+
+function detectDevice() {
+    const userAgent = navigator.userAgent || navigator.vendor || navigator.opera;
+
+    if (/android/i.test(userAgent)) {
+        document.body.style.display = "block";
+        return 'Android phone';
+    } else if (/iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        document.body.style.display = "block";
+        return 'iOS device';
+    } else if(/Windows Phone/i.test(userAgent)) {
+        return 'Windows Phone';
+    } else if(/iPad|Macintosh|Windows|Linux/.test(userAgent)) {
+        return 'Desktop';
+    } else {
+        return 'Unknown device';
+    }
+}
+
+console.log(detectDevice());
