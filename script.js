@@ -79,23 +79,11 @@ function createMenu() {
 function detectDevice() {
     const userAgent = navigator.userAgent || navigator.vendor || navigator.opera;
 
-    if (/android/i.test(userAgent)) {
+    if (/android/i.test(userAgent) || /iPhone|iPod/.test(userAgent) && !window.MSStream) {
         body.style.display = "block";
         body.style.removeProperty("justify-content");
         body.style.removeProperty("align-items");
-        return 'Android phone';
-    } else if (/iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        body.style.display = "block";
-        body.style.removeProperty("justify-content");
-        body.style.removeProperty("align-items");
-        return 'iOS device';
-    } else if(/Windows Phone/i.test(userAgent)) {
-        return 'Windows Phone';
-    } else if(/iPad|Macintosh|Windows|Linux/.test(userAgent)) {
-        return 'Desktop';
-    } else {
-        return 'Unknown device';
     }
 }
 
-console.log(detectDevice());
+detectDevice();
