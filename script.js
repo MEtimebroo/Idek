@@ -10,6 +10,7 @@ const input1 = document.createElement("input");
 const button = document.createElement("button");
 const button1 = document.createElement("button");
 const a = document.createElement("a");
+const body = document.querySelector("body");
 
 a.classList.add("overlay-a");
 a.href = "https://github.com/MEtimebroo/";
@@ -79,10 +80,14 @@ function detectDevice() {
     const userAgent = navigator.userAgent || navigator.vendor || navigator.opera;
 
     if (/android/i.test(userAgent)) {
-        document.body.style.display = "block";
+        body.style.display = "block";
+        body.style.removeProperty("justify-content");
+        body.style.removeProperty("align-items");
         return 'Android phone';
     } else if (/iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        document.body.style.display = "block";
+        body.style.display = "block";
+        body.style.removeProperty("justify-content");
+        body.style.removeProperty("align-items");
         return 'iOS device';
     } else if(/Windows Phone/i.test(userAgent)) {
         return 'Windows Phone';
