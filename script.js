@@ -79,7 +79,7 @@ function createMenu() {
 function detectDevice() {
     const userAgent = navigator.userAgent || navigator.vendor || navigator.opera;
 
-    if (/android/i.test(userAgent) || /iPhone|iPod/.test(userAgent)) {
+    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
         body.style.display = "block";
         body.style.removeProperty("justify-content");
         body.style.removeProperty("align-items");
