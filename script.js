@@ -75,15 +75,3 @@ function createMenu() {
         menu.style.display = "none";
     });
 }
-
-function detectDevice() {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
-        body.style.display = "block";
-        body.style.removeProperty("justify-content");
-        body.style.removeProperty("align-items");
-    }
-}
-
-detectDevice();
