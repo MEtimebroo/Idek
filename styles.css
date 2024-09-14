@@ -10,6 +10,8 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #header {
@@ -47,6 +49,8 @@ body {
     height: 500px;
     border-radius: 15px;
     border: solid 2px dimgray;
+    margin-top: 130px;
+    margin-bottom: 160px;
 }
 
 .im {
@@ -228,18 +232,5 @@ body {
 
     #search {
         margin-right: 260px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    body {
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-
-    .ops {
-        margin-top: 130px;
-        margin-bottom: 160px;
     }
 }
