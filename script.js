@@ -90,3 +90,5 @@ function updateFlexbox() {
 window.onload = function() {
     updateFlexbox();
 }
+
+console.log(navigator.userAgent);
