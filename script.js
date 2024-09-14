@@ -87,4 +87,6 @@ function updateFlexbox() {
     }
 }
 
-updateFlexbox();
+window.onload = function() {
+    updateFlexbox();
+}
