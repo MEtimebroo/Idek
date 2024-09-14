@@ -109,7 +109,7 @@ body {
 #btns {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 50%;
+    flex-basis: 100%;
     margin-bottom: 50px;
 }
 
@@ -228,5 +228,18 @@ body {
 
     #search {
         margin-right: 260px;
+    }
+}
+
+@media (min-width: 801px) {
+    body {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .ops {
+        margin-top: 130px;
+        margin-bottom: 160px;
     }
 }
