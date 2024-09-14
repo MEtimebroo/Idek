@@ -231,7 +231,7 @@ body {
     }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 1024px) {
     body {
         flex-direction: row;
         justify-content: space-evenly;
