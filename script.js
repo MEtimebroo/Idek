@@ -10,7 +10,6 @@ const input1 = document.createElement("input");
 const button = document.createElement("button");
 const button1 = document.createElement("button");
 const a = document.createElement("a");
-const body = document.querySelector("body");
 
 a.classList.add("overlay-a");
 a.href = "https://github.com/MEtimebroo/";
@@ -75,3 +74,17 @@ function createMenu() {
         menu.style.display = "none";
     });
 }
+
+function updateFlexbox() {
+    const body = document.querySelector("body");
+    const userAgent = navigator.userAgent.toLowerCase();
+
+    if (/iPhone|android/.test(userAgent)) {
+        body.style.justifyContent = 'flex-start';
+        body.style.flexWrap = 'wrap';
+    } else {
+        body.style.justifyContent = 'space-evenly';
+    }
+}
+
+updateFlexbox();
