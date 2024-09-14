@@ -81,6 +81,8 @@ function updateFlexbox() {
 
     if (/iPhone|android/.test(userAgent)) {
         body.style.justifyContent = 'flex-start';
+        body.style.alignItems = 'flex-start';
+        body.style.flexDirection = 'column';
         body.style.flexWrap = 'wrap';
     } else {
         body.style.justifyContent = 'space-evenly';
