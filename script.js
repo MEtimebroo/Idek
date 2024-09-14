@@ -74,23 +74,3 @@ function createMenu() {
         menu.style.display = "none";
     });
 }
-
-function updateFlexbox() {
-    const body = document.querySelector("body");
-    const userAgent = navigator.userAgent.toLowerCase();
-
-    if (/iPhone|android/.test(userAgent)) {
-        body.style.justifyContent = 'flex-start';
-        body.style.alignItems = 'flex-start';
-        body.style.flexDirection = 'column';
-        body.style.flexWrap = 'wrap';
-    } else {
-        body.style.justifyContent = 'space-evenly';
-    }
-}
-
-window.onload = function() {
-    updateFlexbox();
-}
-
-console.log(navigator.userAgent);
