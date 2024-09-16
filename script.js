@@ -54,9 +54,7 @@ btnElement2.addEventListener("click", () => {
 })
 
 function createMenu() {
-    const main = document.getElementById("main");
-
-    main.appendChild(menu);
+    document.body.appendChild(menu);
     menu.appendChild(contentDiv);
     contentDiv.appendChild(input);
     contentDiv.appendChild(input1);
