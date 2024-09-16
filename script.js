@@ -69,6 +69,7 @@ function createMenu() {
     button.style.display = "block";
     menu.style.display = "block";
     menu.classList.add("slide-down");
+    menu.style.marginTop = "90px";
 
     button.addEventListener("click", function() {
         menu.style.display = "none";
